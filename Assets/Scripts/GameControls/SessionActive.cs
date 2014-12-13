@@ -3,7 +3,7 @@ using System.Collections;
 
 public class SessionActive : MonoBehaviour {
 
-    bool gameRunning = true;
+    bool gameRunning = false;
     // Use this for initialization
 
     public void Running()

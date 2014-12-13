@@ -8,12 +8,14 @@ public class FinishScore : MonoBehaviour {
     // Use this for initialization
 	void Start () {
         mainScore = this.GetComponent<MainScore>();
-        if (PlayerPrefs.GetFloat("High Score") != null)
+        if (!PlayerPrefs.HasKey("High Score"))
         {
-            highScore = PlayerPrefs.GetFloat("High Score");
+            PlayerPrefs.SetFloat("High Score", highScore);
+
+            
         }
         else
-            PlayerPrefs.SetFloat("High Score", highScore);
+            highScore = PlayerPrefs.GetFloat("High Score");
 	}
 	
     public void HandleScore(float achievedScore)

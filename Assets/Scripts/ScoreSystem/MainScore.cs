@@ -6,12 +6,13 @@ public class MainScore : MonoBehaviour {
 
     public Text ScoreText;
     SessionActive sessionActivity;
-    public float Score = 10000;
+    public float initialScore = 10000;
+    public float Score;
     public float decreaserate = 50;
 	// Use this for initialization
 	void Start () {
         sessionActivity = this.GetComponent<SessionActive>();
-
+        Score = initialScore;
 	}
 	
 	// Update is called once per frame
@@ -22,6 +23,11 @@ public class MainScore : MonoBehaviour {
             ScoreText.text = Score.ToString();
             
         }
+    }
+   public void ResetScore()
+      {
+          Score = initialScore;
+      }
 
-	}
+	
 }
