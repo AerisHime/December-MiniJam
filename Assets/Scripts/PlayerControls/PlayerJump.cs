@@ -12,21 +12,29 @@ public class PlayerJump : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (canJump && Input.GetMouseButtonDown(0))
+        if (canJump && (Input.GetMouseButtonDown(0)||Input.GetKeyDown("space") ))
         {
-            rigidbody2D.velocity = jumpHeight;
+           // rigidbody2D.velocity = jumpHeight;
+            rigidbody2D.AddForce(jumpHeight*50);
         }
 
 	}
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        canJump = true;
+        if (other.gameObject.tag == "Floor")
+        {
+            canJump = true;            
+        }
+
     }
 
     void OnCollisionExit2D(Collision2D other)
     {
-        canJump = false;
+        if (other.gameObject.tag == "Floor")
+        {
+            canJump = false;
+        }
     }
 
 }
