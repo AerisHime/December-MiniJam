@@ -3,7 +3,8 @@ using System.Collections;
 
 public class PlayerJump : MonoBehaviour {
 
-	// Use this for initialization
+    public Vector2 jumpHeight;
+    bool canJump;
 	void Start () {
 	
 	}
