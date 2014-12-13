@@ -16,5 +16,5 @@ function Update()
 	thisTransform.position.x = Mathf.SmoothDamp( thisTransform.position.x, 
 		target.position.x, velocity.x, smoothTime);
 	thisTransform.position.y = Mathf.SmoothDamp( thisTransform.position.y, 
-		target.position.y, velocity.y, smoothTime);
+		target.position.y, velocity.y, smoothTime) ;
 }

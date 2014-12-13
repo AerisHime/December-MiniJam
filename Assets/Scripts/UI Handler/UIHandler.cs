@@ -6,6 +6,9 @@ public class UIHandler : MonoBehaviour {
 
     public Button StartButton;
     public Button ReplayButton;
+    public GameObject ScoreInterface;
+    public GameObject ScoreText;
+    
 
     
 	// Use this for initialization

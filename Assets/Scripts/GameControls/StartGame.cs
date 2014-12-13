@@ -24,6 +24,8 @@ public class StartGame : MonoBehaviour {
         isActive.Running();
         mainScore.ResetScore();
         uiSystem.StartButton.gameObject.SetActive(false);
+        uiSystem.ScoreInterface.SetActive(true);
+        uiSystem.ScoreText.SetActive(true);
 
     }
     public void RestartSession()
