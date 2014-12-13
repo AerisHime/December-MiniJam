@@ -49,6 +49,9 @@
      <Compile Include="Assets\Scripts\PlayerControls\PlayerAccelerate.cs" />
      <Compile Include="Assets\Scripts\PlayerControls\PlayerJump.cs" />
      <Compile Include="Assets\Scripts\PlayerControls\PlayerSlow.cs" />
+     <Compile Include="Assets\Scripts\ScoreSystem\DecreaseScore.cs" />
+     <Compile Include="Assets\Scripts\ScoreSystem\IncreaseScore.cs" />
+     <Compile Include="Assets\Scripts\ScoreSystem\MainScore.cs" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Background.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Transparent Vertex Color.shader" />
