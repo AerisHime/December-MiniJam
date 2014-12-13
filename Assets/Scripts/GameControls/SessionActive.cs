@@ -9,6 +9,7 @@ public class SessionActive : MonoBehaviour {
     public void Running()
     {
         gameRunning = true;
+        Time.timeScale = 1.0f;
     }
 
     public void StopRunning()
