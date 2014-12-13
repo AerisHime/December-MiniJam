@@ -14,18 +14,19 @@ public class LevelFinish : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Debug.Log("vilocity" +rigidbody2D.velocity.ToString()) ;
+
 	}
 	
-	void OnTriggerExit2D(Collider2D otherObj)
+	void OnTriggerEnter2D(Collider2D otherObj)
 	{
 		if (otherObj.gameObject.tag == "Finish")
 		{	
 			//this.sessionActivity.StopRunning() ;
 			// Play Finish Animation 
+            Debug.Log("Finished!");
 			sessionActivity.StopRunning() ;
-            uiHandler.StartButton.gameObject.SetActive(true);
-			Time.timeScale = 0.0f ;
+            uiHandler.ReplayButton.gameObject.SetActive(true);
+			Time.timeScale = 0.0f;
            
 			
 		}

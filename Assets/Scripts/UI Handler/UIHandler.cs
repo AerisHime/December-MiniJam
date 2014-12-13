@@ -5,6 +5,8 @@ using System.Collections;
 public class UIHandler : MonoBehaviour {
 
     public Button StartButton;
+    public Button ReplayButton;
+
     
 	// Use this for initialization
 	void Start () {

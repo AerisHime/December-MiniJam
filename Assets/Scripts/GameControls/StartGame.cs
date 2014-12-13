@@ -26,4 +26,8 @@ public class StartGame : MonoBehaviour {
         uiSystem.StartButton.gameObject.SetActive(false);
 
     }
+    public void RestartSession()
+    {
+        Application.LoadLevel(0);
+    }
 }
