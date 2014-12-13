@@ -31,6 +31,7 @@ public class PlayerSlow : MonoBehaviour {
             this.rigidbody2D.AddForce(speedDown, ForceMode2D.Impulse);
             removeScore.Decrease();
             Destroy(otherObj.gameObject);
+
         }
     }
 }
