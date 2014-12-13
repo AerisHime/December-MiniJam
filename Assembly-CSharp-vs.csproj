@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\GameControls\SessionActive.cs" />
      <Compile Include="Assets\Scripts\PlayerControls\PlayerAccelerate.cs" />
      <Compile Include="Assets\Scripts\PlayerControls\PlayerJump.cs" />
      <Compile Include="Assets\Scripts\PlayerControls\PlayerSlow.cs" />
