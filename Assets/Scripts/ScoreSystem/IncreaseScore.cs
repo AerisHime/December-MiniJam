@@ -3,13 +3,15 @@ using System.Collections;
 
 public class IncreaseScore : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    public float increaseValue = 100;
+    MainScore mainScoreScript;
+    void Start()
+    {
+        mainScoreScript = GetComponent<MainScore>();
+    }
+    public void Increase()
+    {
+        mainScoreScript.Score += increaseValue;
+    }
+
 }

@@ -3,13 +3,14 @@ using System.Collections;
 
 public class DecreaseScore : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    public float decreaseValue = 100;
+    MainScore mainScoreScript;
+    void Start()
+    {
+        mainScoreScript = GetComponent<MainScore>();
+    }
+    public void Decrease()
+    {
+        mainScoreScript.Score -= decreaseValue;
+    }
 }
